@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="../css/admin_style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>AdminScope</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#category">Category</a></li>
+            <li><a href="#posts">Posts</a></li>
+            <li><a href="#manage-posts">Manage Posts</a></li> <!-- Added Manage Posts -->
+            <li><a href="#pages">Pages</a></li>
+            <li><a href="#comments">Comments</a></li>
+        </ul>
+        <div class="help">
+            <h3>For Help?</h3>
+            <p>Email: indras@gmail.com</p>
+            <p>Phone: 0753800728</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <header>
+            <h2>Dashboard</h2>
+            <p>Welcome Admin!</p>
+        </header>
+        <main>
+            <!-- Dashboard Section -->
+            <section id="dashboard" class="active">
+                <div class="dashboard-item">
+                    <h3>Categories Listed</h3>
+                    <p></p>
+                </div>
+                <div class="dashboard-item">
+                    <h3>Live News</h3>
+                    <p></p>
+                </div>
+                <div class="dashboard-item">
+                    <h3>Trash News</h3>
+                    <p></p>
+                </div>
+            </section>
+
+            <!-- Add Post Section -->
+            <section id="posts" class="hidden">
+                <h2>Add Post</h2>
+                <form id="addPostForm">
+                    <label for="title">Post Title</label>
+                    <input type="text" id="title" name="title" placeholder="Enter title">
+
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="1">Category 1</option>
+                        <option value="2">Category 2</option>
+                    </select>
+
+                    <label for="details">Post Details</label>
+                    <textarea id="details" name="details"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <!-- Manage Posts Section -->
+            <section id="manage-posts" class="hidden">
+                <h2>Manage Posts</h2>
+                <ul id="postList">
+                    <!-- Sample posts -->
+                    <li>
+                        <span>Post 1: Category 1</span>
+                        <button class="delete-btn" data-post-id="1">Delete</button>
+                    </li>
+                    <li>
+                        <span>Post 2: Category 2</span>
+                        <button class="delete-btn" data-post-id="2">Delete</button>
+                    </li>
+                    <!-- More posts can be added dynamically -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
