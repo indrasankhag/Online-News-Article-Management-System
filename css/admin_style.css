@@ -8,14 +8,14 @@ body {
     font-family: 'Roboto', sans-serif;
     display: flex;
     height: 100vh;
-    overflow: hidden;
-    background: #f3e5d8; /* Beige background color */
+    overflow:hidden;
+    background: #f3e5d8; 
 }
 
 .sidebar {
     width: 260px;
-    background: linear-gradient(135deg, #ffe0be, #fe9132); /* Beige gradient */
-    color: #333333; /* Dark text color */
+    background: linear-gradient(135deg, #ffe0be, #fe9132); 
+    color: #333333;
     min-height: 100vh;
     padding: 30px;
     position: fixed;
@@ -46,7 +46,7 @@ body {
 }
 
 .sidebar ul li a:hover {
-    color: #000000; /* Orange accent color */
+    color: #000000; 
     padding-left: 10px;
 }
 
@@ -69,6 +69,7 @@ header {
     padding: 25px;
     color: #333333;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 header h2 {
@@ -77,14 +78,19 @@ header h2 {
     font-weight: 500;
 }
 
+#head2{
+    background: #ffffff;
+    padding: 25px;
+    color: #333333;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;  
+    margin-top: 20px;  
+}
+
 main {
     display: flex;
     flex-direction: column;
     height: 100%;
-}
-
-section {
-    display: none;
 }
 
 section.active {
@@ -97,6 +103,7 @@ section.active {
     margin: 15px 0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
 }
 
 form {
@@ -127,7 +134,7 @@ form input:focus, form select:focus, form textarea:focus {
 form button {
     margin-top: 20px;
     padding: 12px;
-    background: #f5a742; /* Orange accent color */
+    background: #f5a742; 
     color: #ffffff;
     border: none;
     cursor: pointer;
@@ -156,7 +163,7 @@ form button:hover {
 }
 
 .delete-btn {
-    background: #d4725b; /* Reddish-orange color */
+    background: #d4725b; 
     color: #ffffff;
     border: none;
     padding: 8px 15px;
